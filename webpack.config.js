@@ -14,7 +14,6 @@ const isProd = !isDev;
 const config = {
   entry: {
     index: './src/js/index.js',
-    franchise: './src/js/franchise.js',
   },
   output: {
     filename: '[name].bundle.js',
@@ -77,18 +76,9 @@ const config = {
       {
         title: 'index',
         template: './index.html',
-        excludeChunks: ['franchise'],
         filename: 'index.html',
       }
     ), 
-    new HtmlWebpackPlugin(
-      {
-        title: 'franchise',
-        template: './franchise.html',
-        chunks: ['franchise'],
-        filename: 'franchise.html',
-      }
-    ),
     new MiniCssExtractPlugin({
       filename: '[name].css',
       chunkFilename: '[id].css'
