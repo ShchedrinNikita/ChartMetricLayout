@@ -1,0 +1,32 @@
+@media screen and (max-width: 1140px)
+    .main-section_cn
+        .container_cn 
+            > img
+                height: 300px
+                top: calc((100vh + 70px)/2 - 150px)  
+
+@media screen and (max-width: 1024px)               
+    .main-section_cn
+        .container_cn 
+            > img
+                display: none  
+            .header_cn 
+                > .menu-list_md, > .reg-part_cn
+                    display: none 
+        .burger-menu_md
+            display: block
+        .title-box
+            &_cn
+                justify-content: center
+            &_inner_cn
+                align-items: center
+                text-align: center
+
+@media screen and (max-width: 435px)   
+    .main-section_cn
+        .container_cn 
+            .title-box_inner_cn
+                .btns_cn
+                    flex-direction: column
+                    > .btn_md
+                        margin: 10px 0
