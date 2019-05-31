@@ -5,6 +5,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server --hot  --progress --colors --mode development",
+    "startHost": "webpack-dev-server --host 192.168.1.70 --hot  --progress --colors --mode development",
     "prestartTemp": "npm install && rimraf public",
     "build": "webpack --colors --progress --mode production",
     "prebuild": "rimraf public && npm install"
