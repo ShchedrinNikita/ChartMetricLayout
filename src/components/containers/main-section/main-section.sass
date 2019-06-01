@@ -19,10 +19,26 @@
         justify-content: space-between
         align-items: center
         font-size: 14px
+        &.white
+            background-color: #fff
+            color: black
+            &::after, &::before
+                content: ''
+                position: absolute
+                height: 100%
+                width: 0.85rem
+                background-color: #fff
+                
+            &::after
+                left: -0.8rem
+            &::before
+                right: -0.8rem
+
         position: relative
         .reg-part_cn
             display: flex
             align-items: center
+            
 
     .title-box
         &_cn
