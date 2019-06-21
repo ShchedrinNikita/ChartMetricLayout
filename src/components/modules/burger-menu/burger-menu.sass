@@ -1,6 +1,6 @@
 .burger-menu_md
     .hamburger-inner, .hamburger-inner:after, .hamburger-inner:before
-        background-color: #fff !important
+        background-color: #fff 
     .hidden-part
         display: none
         background-color: #fff
@@ -11,6 +11,8 @@
         padding-top: 2rem
         .btn_md.green
             color: #fff
+        .btn_md.no-bg
+            color: $text-dark
         .menu-list_md 
             list-style-type: none
             padding: 0 35px
@@ -18,3 +20,7 @@
                 display: block
                 padding: 0.5rem 0
 
+@media screen and (max-width: 600px)  
+    .burger-menu_md
+    .hidden-part
+        padding-top: 0.5rem
